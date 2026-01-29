@@ -11,3 +11,45 @@ main {
 .superior {
   display: flex;
 }
+
+article {
+  margin: 40px;
+  color: #506;
+  font-family: "League Spartan", sans-serif;
+  font-size: 15px;
+  margin-right: 30px;
+}
+
+h1 {
+  font-size: 50px;
+  margin-bottom: 5px;
+}
+
+.clasificacion {
+  background-color: #ddd;
+  margin-top: 20px;
+  padding: 10px;
+  margin-left: 0px;
+  border-radius: 5px;
+}
+
+.contenedor-de-tarjetas {
+  display: flex;
+}
+
+.tarjeta {
+  background-color: #506;
+  color: white;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  font-family: "League Spartan", sans-serif;
+  display: flex;
+}
+
+.foto {
+  margin-right: 20px;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+}
