@@ -10,6 +10,7 @@ article {
   color: #506;
   font-size: 15px;
   margin-right: 30px;
+  text-align: center;
 }
 
 h1 {
@@ -17,11 +18,23 @@ h1 {
   margin-bottom: 5px;
 }
 
+.stars,
+.rated {
+  padding: 10px;
+  margin: 0px;
+}
+
 .clasificacion {
   background-color: #fee;
   margin-top: 20px;
-  padding: 10px;
+  padding-right: 20px;
   border-radius: 5px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .tarjeta {
@@ -39,7 +52,7 @@ h1 {
   height: 50px;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 600px) {
   .container {
     max-width: 1110px;
     margin: 0 auto;
@@ -54,12 +67,13 @@ h1 {
 
   .info {
     flex: 1 1 0;
+    text-align: left;
   }
 
   .contenedor-de-clasificacion {
     display: flex;
     flex-direction: column;
-    flex: 1 1 0;
+    flex: 2 1 0;
   }
 
   .clasificacion-1 {
