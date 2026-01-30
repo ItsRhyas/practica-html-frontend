@@ -1,14 +1,22 @@
 body {
-  background-image: url(images/bg-pattern-top-desktop.svg);
-  background-repeat: no-repeat;
-  background-position: top-left;
+  background-image:
+    url(images/bg-pattern-top-desktop.svg),
+    url(images/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position:
+    top left,
+    bottom right;
+  background-size:
+    50% auto,
+    50% auto;
   font-family: "League Spartan", sans-serif;
+  min-height: 100vh;
 }
 
 article {
   margin: 40px;
   color: #506;
-  font-size: 15px;
+  font-size: 18px;
   margin-right: 30px;
   text-align: center;
 }
@@ -43,6 +51,7 @@ h1 {
   border-radius: 5px;
   padding: 20px;
   margin-bottom: 20px;
+  flex: 1 1 0;
 }
 
 .foto {
@@ -50,6 +59,22 @@ h1 {
   border-radius: 100%;
   width: 50px;
   height: 50px;
+}
+
+.foto-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nombre,
+.status {
+  margin: 0px;
+  padding: 2px;
+}
+
+.status {
+  color: #f88;
 }
 
 @media (min-width: 600px) {
@@ -96,6 +121,7 @@ h1 {
   .tarjeta {
     margin: 10px;
     flex-grow: 0.8;
+    min-height: 150px;
   }
 
   .tarjeta-2 {
